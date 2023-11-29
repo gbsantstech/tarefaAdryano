@@ -1,0 +1,104 @@
+<div style="background-image: url('assets/fundocadastrosenac.png');" class="fundo">
+    <h2>Sistema de Coleta</h2>
+        <div class="teladc">
+          <div class="card" style="width: 50rem;">
+            <div class="card-cadastro">
+              <h5 class="card-title">Cadastro de Usuário</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Insira seus dados</h6>
+                <form onsubmit="return validarSenha()">
+                  <div class="form-row">
+                      <div class="form-group col-md-6">
+                          <label for="inputEmail4">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                      </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4-confirm">Confirme seu Email</label>
+                            <input type="email" class="form-control" id="inputEmail4-confirm" placeholder="Confirme seu Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Senha</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Senha, Exemplo: sAd14@">
+                            <span id="erroSenha" style="color: red;"></span>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputConfirmPassword4">Confirme sua Senha</label>
+                            <input type="password" class="form-control" id="inputConfirmPassword4" placeholder="Confirme sua Senha">
+                            <span id="erroSenha" style="color: red;"></span>
+                        </div>
+                    </div>
+                <div class="form-group">
+                  <label for="inputNome">Nome Completo</label>
+                  <input type="text" class="form-control" id="inputNome" placeholder="Nome completo">
+                </div>
+                <div class="form-group">
+                  <label for="inputCPF">CPF</label>
+                  <input type="text" class="form-control" id="inputCPF" placeholder="000.000.000-00" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}-[0-9]{2}">
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="inputTelefone">Telefone</label>
+                    <input type="text" class="form-control" id="inputTelefone" placeholder="+55 (21) 97777-7777" pattern="\+\d{2} \(\d{2}\) \d{5}-\d{4}">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputGenero">Gênero</label>
+                    <select id="inputGenero" class="form-control" onchange="mostrarOutroGenero()">
+                        <option selected>Escolher...</option>
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outro (Qual?)</option>
+                        <option>Prefiro não dizer</option>
+                    </select>
+                    <input type="text" id="outroGenero" class="form-control mt-2" style="display:none;" placeholder="Por favor, especifique">
+                  </div>
+                  <div class="form-group col-md-4">
+                    <label for="inputCEP">CEP</label>
+                    <input type="text" class="form-control" id="inputCEP" placeholder="12345678" pattern="[0-9]{8}">
+                  </div>
+                  <div class="form-group col-md-2">
+                    <label for="inputEstado">Estado</label>
+                    <input type="text" class="form-control" id="inputEstado" placeholder="RJ">
+                  </div> 
+                  <div class="form-group col-md-4">
+                    <label for="inputCidade">Cidade</label>
+                    <input type="text" class="form-control" id="inputCidade" placeholder="Rio de Janeiro">
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="inputComplemento">Complemento</label>
+                    <input type="text" class="form-control" id="inputComplemento" placeholder="Casa ou Apartamento, bloco e nº">
+                  </div>
+                  <div class="form-group  col-md-12">
+                    <label for="inputEndereco">Endereço</label>
+                    <input type="text" class="form-control" id="inputEndereco" placeholder="Bairro, Rua e Número">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <button type="submit" class="btn btn-primary btn-sm btn-block cadastro">Cadastrar</button>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <button type="button" class="btn btn-secondary btn-sm btn-block voltar">Voltar para o início</button>
+                  </div>
+                </div>
+              </form>
+              <div class="form-row">
+                <div class="form-group col-md-12">
+                  <h6 class="card-subtitle mb-2 text-muted">Entrar com</h6>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group col-md-6 centralize-images">
+                  <a href="https://mail.google.com" class="card-link">
+                    <img src="assets/google.png" alt="Gmail">
+                  </a>
+                </div>
+                <div class="form-group col-md-6 centralize-images">
+                  <a href="https://br.linkedin.com/" class="card-link">
+                    <img src="assets/linkedin (1).png" alt="Linkedin">
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> 
+   
+
